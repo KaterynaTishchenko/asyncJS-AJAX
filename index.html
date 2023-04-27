@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./script.js"></script>
+    <title>Async JS Films search</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <form action="" id="searchForm">
+        <label for="name"> Enter film's title</label><br>
+        <input type="text" name="name" id="name" placeholder="Title:"><br>
+        <input type="radio" id="movie" name="movie-type" value="movie" checked>
+        <label for="movie"> movie</label><br>
+        <input type="radio" id="series" name="movie-type" value="series">
+        <label for="series"> series</label><br>
+        <input type="radio" id="episode" name="movie-type" value="episode">
+        <label for="episode"> episode</label><br><br>
+        <button id="submit" type="submit">Search</button>
+    </form>
+
+    <div id="response">
+
+        <ul id="paginated-list">
+            <li>
+            </li>
+        </ul>
+
+        <nav id="pagination-container" class="pagination-container invisible">
+
+            <button id="first-page">Start</button>
+            <button id="previous-btn" >Prev</button>
+            <div id="pagination-numbers">
+                <div id="firstNumbers"></div>
+                <div>
+                    <p id="otherNumbers" class="invisible">. . .</p>
+                </div>
+                <div id="lastNumbers"> <div id="insertBeforeTest"></div></div>
+            </div>
+            <button id="next-btn">Next</button>
+            <button id="last-page">End</button>
+
+
+        </nav>
+
+    </div>
+
+    <div id="windowDetailes" class="winDetail">
+        <div class="winDetail-content">
+            <span class="close">&times;</span>
+            <div class="winDetail-inner" id="windowDetailesInner">
+            </div>
+        </div>
+    </div>
+</div>
+   
+
+</body>
+
+</html>
